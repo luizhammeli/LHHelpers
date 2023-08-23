@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class CustomViewController<CustomView: UIView>: UIViewController {
+open class CustomViewController<CustomView: UIView>: UIViewController {
     // MARK: - Subviews
     public var customView: CustomView {
         if let view = view as? CustomView {
