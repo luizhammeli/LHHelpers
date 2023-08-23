@@ -7,9 +7,9 @@
 
 import UIKit
 
-class CustomViewController<CustomView: UIView>: UIViewController {
+public class CustomViewController<CustomView: UIView>: UIViewController {
     // MARK: - Subviews
-    var customView: CustomView {
+    public var customView: CustomView {
         if let view = view as? CustomView {
             return view
         } else {
@@ -18,7 +18,7 @@ class CustomViewController<CustomView: UIView>: UIViewController {
     }
 
     // MARK: - Lifecycle
-    override func loadView() {
+    public override func loadView() {
         self.view = CustomView()
     }
 }

@@ -8,20 +8,20 @@
 import UIKit
 
 // swiftlint:disable file_types_order
-struct AnchoredPositionConstraints {
+public struct AnchoredPositionConstraints {
     var top, leading, bottom, trailing: NSLayoutConstraint?
 }
 
-struct AnchoredSizeConstraints {
+public struct AnchoredSizeConstraints {
     var width, height: NSLayoutConstraint?
 }
 
-struct AnchoredXYConstraints {
+public struct AnchoredXYConstraints {
     var x: NSLayoutXAxisAnchor?
     var y: NSLayoutYAxisAnchor?
 }
 
-extension UIView {
+public extension UIView {
     @discardableResult
     func anchor(
         top: NSLayoutYAxisAnchor? = nil,
